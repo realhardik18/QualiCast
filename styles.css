@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .phase {
+    text-align: center;
+  }
+  
+  .fixtures {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .fixtures table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .fixtures th, .fixtures td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .points-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .points-table th, .points-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .points-table th {
+    background-color: #f2f2f2;
+  }

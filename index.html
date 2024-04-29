@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QualiCast</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1b1e21;
+            color: #fff;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .card {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .list-group-item {
+            background-color: #495057;
+            border-color: #495057;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">QualiCastᵇᵉᵗᵃ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript: location. reload();">Restart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.gg/YQMp7bvRUN">Support Server</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.reddit.com/r/QualiCast/">Subreddit</a>
+                </li>
+                <li class="ml-auto nav-item">
+                    <a class="nav-link" href="https://twitter.com/realhardik18">Made by
+                        <span style="color:lightcyan;">Realhardik18</span></a></a>
+                </li>
+            </ul>
+            </ul>
+        </div>
+    </nav>
+    <h3 style="text-align: center;font-family:monospace;font-size:large;margin-top:10px">check the boxes to decide who
+        wins and see
+        the points table
+        update automatically</h3>
+    <h4 style="text-align: center;font-family:monospace;font-size:small">last updated after match number 45(RCBvsGT)
+    </h4>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Phase-1</h5>
+                        <p class="card-text">Matches between 29th april and 9th may</p>
+                        <ul id="set2Matches" class="list-group">
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match1" class="form-check-input" data-team="B">KKR
+                                VS
+                                <input type="radio" name="set1_match1" class="form-check-input" data-team="F"
+                                    style="margin-left:45px">DC
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match2" class="form-check-input" data-team="E">LSG
+                                VS
+                                <input type="radio" name="set1_match2" class="form-check-input" data-team="I"
+                                    style="margin-left:45px">MI
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match3" class="form-check-input" data-team="C">CSK
+                                VS
+                                <input type="radio" name="set1_match3" class="form-check-input" data-team="H"
+                                    style="margin-left:45px">PBKS
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match4" class="form-check-input" data-team="D">SRH
+                                VS
+                                <input type="radio" name="set1_match4" class="form-check-input" data-team="A"
+                                    style="margin-left:45px">RR
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match5" class="form-check-input" data-team="I">MI
+                                VS
+                                <input type="radio" name="set1_match5" class="form-check-input" data-team="B"
+                                    style="margin-left:45px">KKR
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match6" class="form-check-input" data-team="J">RCB
+                                VS
+                                <input type="radio" name="set1_match6" class="form-check-input" data-team="G"
+                                    style="margin-left:45px">GT
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match7" class="form-check-input" data-team="H">PBKS
+                                VS
+                                <input type="radio" name="set1_match7" class="form-check-input" data-team="C"
+                                    style="margin-left:45px">CSK
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match8" class="form-check-input" data-team="E">LSG
+                                VS
+                                <input type="radio" name="set1_match8" class="form-check-input" data-team="B"
+                                    style="margin-left:45px">KKR
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match9" class="form-check-input" data-team="I">MI
+                                VS
+                                <input type="radio" name="set1_match9" class="form-check-input" data-team="D"
+                                    style="margin-left:45px">SRH
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match10" class="form-check-input" data-team="F">DC
+                                VS
+                                <input type="radio" name="set1_match10" class="form-check-input" data-team="A"
+                                    style="margin-left:45px">RR
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match11" class="form-check-input" data-team="D">SRH
+                                VS
+                                <input type="radio" name="set1_match11" class="form-check-input" data-team="E"
+                                    style="margin-left:45px">LSG
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set1_match12" class="form-check-input" data-team="H">PBKS
+                                VS
+                                <input type="radio" name="set1_match12" class="form-check-input" data-team="J"
+                                    style="margin-left:45px">RCB
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Phase-2</h5>
+                        <p class="card-text">Matches between 10th may and 19th may</p>
+                        <ul id="set2Matches" class="list-group">
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match1" class="form-check-input" data-team="G">GT
+                                VS
+                                <input type="radio" name="set2_match1" class="form-check-input" data-team="C"
+                                    style="margin-left:45px">CSK
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match2" class="form-check-input" data-team="B">KKR
+                                VS
+                                <input type="radio" name="set2_match2" class="form-check-input" data-team="I"
+                                    style="margin-left:45px">MI
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match3" class="form-check-input" data-team="C">CSK
+                                VS
+                                <input type="radio" name="set2_match3" class="form-check-input" data-team="A"
+                                    style="margin-left:45px">RR
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match4" class="form-check-input" data-team="J">RCB
+                                VS
+                                <input type="radio" name="set2_match4" class="form-check-input" data-team="F"
+                                    style="margin-left:45px">DC
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match5" class="form-check-input" data-team="G">GT
+                                VS
+                                <input type="radio" name="set2_match5" class="form-check-input" data-team="B"
+                                    style="margin-left:45px">KKR
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match6" class="form-check-input" data-team="F">DC
+                                VS
+                                <input type="radio" name="set2_match6" class="form-check-input" data-team="E"
+                                    style="margin-left:45px">LSG
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match7" class="form-check-input" data-team="A">RR
+                                VS
+                                <input type="radio" name="set2_match7" class="form-check-input" data-team="H"
+                                    style="margin-left:45px">PBKS
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match8" class="form-check-input" data-team="D">SRH
+                                VS
+                                <input type="radio" name="set2_match8" class="form-check-input" data-team="G"
+                                    style="margin-left:45px">GT
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match9" class="form-check-input" data-team="I">MI
+                                VS
+                                <input type="radio" name="set2_match9" class="form-check-input" data-team="E"
+                                    style="margin-left:45px">LSG
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match10" class="form-check-input" data-team="J">RCB
+                                VS
+                                <input type="radio" name="set2_match10" class="form-check-input" data-team="C"
+                                    style="margin-left:45px">CSK
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match11" class="form-check-input" data-team="D">SRH
+                                VS
+                                <input type="radio" name="set2_match11" class="form-check-input" data-team="H"
+                                    style="margin-left:45px">PBKS
+                            </li>
+                            <li class="list-group-item" style="text-align: center;">
+                                <input type="radio" name="set2_match12" class="form-check-input" data-team="A">RR
+                                VS
+                                <input type="radio" name="set2_match12" class="form-check-input" data-team="B"
+                                    style="margin-left:45px">KKR
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Points Table</h5>
+                        <table id="pointsTable" class="table table-dark"
+                            style="border: 2px solid #32a852; border-radius: 5px;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Team</th>
+                                    <th scope="col">Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="teamA">
+                                    <th scope="row">RR</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamB">
+                                    <th scope="row">KKR</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamC">
+                                    <th scope="row">CSK</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamD">
+                                    <th scope="row">SRH</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamE">
+                                    <th scope="row">LSG</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamF">
+                                    <th scope="row">DC</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamG">
+                                    <th scope="row">GT</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamH">
+                                    <th scope="row">PBKS</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamI">
+                                    <th scope="row">MI</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr id="teamJ">
+                                    <th scope="row">RCB</th>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="font-size: x-small;">ranking between teams with same points will be decided based on
+                            their NRR. I am working on a
+                            NRR predictor based on previous performances. join the <a
+                                href="https://discord.gg/YQMp7bvRUN">discord</a> or the <a
+                                href="https://www.reddit.com/r/QualiCast/">subreddit</a> for
+                            more updates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to generate a random integer between min (inclusive) and max (inclusive)
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Initialize points for each team
+        var initialPoints = {
+            'A': 16,
+            'B': 10,
+            'C': 10,
+            'D': 10,
+            'E': 10,
+            'F': 10,
+            'G': 8,
+            'H': 6,
+            'I': 6,
+            'J': 6,
+        };
+
+        // Update points table with initial points
+        $.each(initialPoints, function (team, points) {
+            $('#pointsTable #team' + team).find('td').text(points);
+        });
+
+        // Function to update points table based on prediction
+        function updatePointsTable(selectedTeam) {
+            // Get the name of the selected team and its opponent
+            var selectedTeamName = selectedTeam.data('team');
+            var opponentName = selectedTeam.siblings('input:not(:checked)').data('team');
+
+            // Decrease points from the opponent by 2 if not already at initial value
+            var opponentPoints = parseInt($('#pointsTable #team' + opponentName).find('td').text());
+            var initialOpponentPoints = initialPoints[opponentName];
+            if (opponentPoints > initialOpponentPoints) {
+                $('#pointsTable #team' + opponentName).find('td').text(Math.max(opponentPoints - 2, initialOpponentPoints));
+            }
+
+            // Increase points for selected team by 2
+            var teamPoints = parseInt($('#pointsTable #team' + selectedTeamName).find('td').text());
+            $('#pointsTable #team' + selectedTeamName).find('td').text(teamPoints + 2);
+
+            // Sort table rows based on points
+            var rows = $('#pointsTable tbody tr').get();
+            rows.sort(function (rowA, rowB) {
+                var pointsA = parseInt($(rowA).find('td').text());
+                var pointsB = parseInt($(rowB).find('td').text());
+                return pointsB - pointsA;
+            });
+
+            // Reorder rows in points table
+            $.each(rows, function (index, row) {
+                $('#pointsTable tbody').append(row);
+            });
+
+            // Color top 4 teams
+            $('#pointsTable tbody tr').removeClass('top-team');
+            $('#pointsTable tbody tr:lt(4)').addClass('top-team');
+        }
+
+        // Event listener for radio button change
+        $('.form-check-input').change(function () {
+            var selectedTeam = $(this);
+            updatePointsTable(selectedTeam);
+        });
+    </script>
+
+</body>
+
+</html>
